@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+}
+body{
+    font-family: sans-serif;
+    color: white;
+}
+.nav-bar{
+    display: grid;
+    grid-template-columns:365px 90px 180px 706px 201px 365px;
+    align-items: center;
+    background-color: #3D3C3E;
+    height: 56px;
+    justify-items: center;
+}
+
+.nav-bar__categorias-lineo{
+    grid-column: 2/3;
+    display: grid;
+    grid-template-rows: 8px 20px 20px 8px;
+    align-items: center;
+    justify-items: center;
+    background-color: #4D4B4D;
+    height: 100%;
+    width: 100%;
+}
+.nav-bar__categorias-lineo:hover{
+    background-color: #fff;
+    color: #FE5504;
+}
+.nav-bar__categorias-lineo__i-menu, .nav-bar__categorias-lineo__text{
+    margin: 8px;
+    align-content: center;
+    justify-content: center;
+}
+.nav-bar__categorias-lineo__i-menu{
+    grid-row:2/3;
+}
+.nav-bar__categorias-lineo__text{
+    grid-row:3/4;
+}
+.nav-bar__container__categorias-lineo__menu-desplegable{
+    position:absolute;
+    margin-top: 51px;
+}
+.nav-bar__categorias-lineo__menu-desplegable{
+    list-style: none;
+    padding: 5px 0px;
+    display: grid;
+    grid-template-columns: 293px 887px;
+    grid-template-rows: repeat(20,26px);
+    position:absolute;
+    display: none;
+}
+.nav-bar__categorias-lineo:hover >  .nav-bar__container__categorias-lineo__menu-desplegable .nav-bar__categorias-lineo__menu-desplegable{
+    display: grid;
+}
+.li-container-supermercado-y-mascotas-cuadro-que-aparece{
+}
+.supermercado-y-mascotas:hover  .li-container-supermercado-y-mascotas-cuadro-que-aparece{
+}
+.supermercado-y-mascotas, .productos-internacionales{
+    padding: 5px 0px;
+    font-size: 15px;
+    color: grey;
+    background-color: white;
+}
+.supermercado-y-mascotas:hover{
+    background-color: #FE5504;
+    color: white;
+}
+.supermercado-y-mascotas:hover a{
+    color: white;
+}
+.supermercado-y-mascotas a{
+    text-decoration: none;
+    color: grey;
+}
+.li-container-supermercado-y-mascotas-cuadro-que-aparece{
+    grid-row: 1/20;
+    grid-column: 2/3;
+    background-color: #F3F2F3;
+}
+.supermercado-y-mascotas-cuadro-que-aparece{
+    color: black;
+    display: grid;
+    grid-template-columns: 336px 536px;
+    padding: 10px;
+}
+.contenido-supermercado-y-mascotas{
+    display: grid;
+    grid-template-rows: 443px;
+    grid-template-columns: 168px 168px;
+}
+.Supermercado-ul{
+    list-style: none;
+    margin-left: -39px;
+}
+.Supermercado-ul li{
+    margin: 3px 0px;
+}
+.Mascotas-ul li{
+    margin: 3px 0px;
+}
+.supermercado-li ,.mascotas-li,.lo-mas-buscado-li{
+    margin: 8px 0;
+    padding: 5px 0px;
+}
+.Supermercado-ul li a{
+    text-decoration: none;
+    color: #4D4B4D;
+    font-size: 14px;
+}
+.Supermercado-ul li:hover >a{
+    color: #FE5504;
+}
+.Mascotas-ul{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    list-style: none;
+    margin-left: -39px;
+}
+.Mascotas-ul  li a{
+    text-decoration: none;
+    color: #4D4B4D;
+    font-size: 14px;
+}
+.Mascotas-ul  li:hover > a{
+    color: #FE5504;
+}
+.tabla-productos-supermercado-y-mascotas{
+    display: grid;
+    grid-template-rows: 40px 443px;
+    align-items: center;
+    justify-items: left;
+}
+.title-supermercado-y-mascotas{
+    grid-column: 1/2;
+}
+.title-supermercado-y-mascotas a{
+    font-size: 15px;
+    justify-content: center;
+    align-content: center;
+    color: #4D4B4D;
+    text-decoration: none;
+}
+.imagen-productos-supermercado-y-mascotas{
+    margin-right: 20px;
+}
+.imagen-productos-supermercado-y-mascotas img{
+    object-fit:cover;
+    width: 100%;
+}
+.productos-internacionales{
+    grid-row: 2/3;
+}
+.productos-internacionales a{
+    text-decoration: none;
+    color: grey;
+}
+.productos-internacionales:hover{
+    background-color: #FE5504;
+    color: white;
+}
+.productos-internacionales:hover a{
+    color: white;
+}
+
+.nav-bar__img-logo-lineo{
+    
+}
+.nav-bar__input-buscador-lineo{
+    display: grid;
+    grid-template-columns: 657px 46px;
+    align-items: center;
+    justify-items: left;
+    width: 100%;
+    height: 100%;
+}
+.nav-bar__input-buscador-lineo__input-search{
+    width: 100.5%;
+    height: 36px;
+}
+.nav-bar__input-buscador-lineo__input-search__products{
+    width: 99%;
+    height: 100%;
+    border-radius: 2px;
+    border: none;
+}
+.nav-bar__input-buscador-lineo__input-search__products:focus{
+    border: none;
+}
+.nav-bar__input-buscador-lineo__input-search1{
+    background-color: #FE5504;
+    width: 95%;
+    height: 38px;
+    border-radius:2px ;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    font-size: 22px;
+    grid-column-start: auto;
+}
+.nav-bar__input-buscador-lineo__input-search1:hover{
+    background-color: #FE5504;
+}
+.nav-bar__envio-usuario-carrito{
+    display: grid;
+    grid-template-columns: 67px 67px 67px;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+}
+.nav-bar__envio, .nav-bar__usuario, .nav-bar__carrito{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    font-size: 25px;
+}
+.nav-bar__envio{
+    align-content: center;
+    justify-content: center;
+}
+.nav-bar__envio:hover{
+    background-color: #fff;
+    color: #FE5504;
+}
+.nav-bar__carrito{
+    align-content: center;
+    justify-content: center;
+}
+.nav-bar__carrito:hover{
+    background-color: #fff;
+    color: #FE5504;
+}
+.nav-bar__usuario{
+    align-content: center;
+    justify-content: center;
+}
+.nav-bar__usuario:hover{
+    background-color: #fff;
+    color: #FE5504;
+}
+.franja-gris-con-links-raros{
+    background-color:#F3F2F3;
+    display: grid;
+    grid-template-columns: 365px 168px 168px 168px 168px 168px 168px 168px 365px ;
+    align-items: left;
+}
+.solo-hoy{
+    grid-column: 2/3;
+}
+.franja-gris-con-links-raros div:hover > a{
+    color: #FE5504;
+}
+.franja-gris-con-links-raros div{
+    color: #FE5504;
+    padding: 5px 5px;
+}
+.franja-gris-con-links-raros div a{
+    text-decoration: none;
+    color: #4D4B4D;
+    font-size: 14px;
+}
+.container-chocapik-la-despensa img{
+    margin: 30px 365px 2px 365px;
+}
+.tabla-despensa-cafe-limpieza-bebes-mascotas-limpieza{
+    display: grid;
+    margin: 5px 365px;
+    grid-template-columns:392px 392px 392px ;
+    grid-gap: 2px;
+}
+.tabla-despensa-cafe-limpieza-bebes-mascotas-limpieza div{
+    
+}
+.tabla-despensa-cafe-limpieza-bebes-mascotas-limpieza div img{
+    height: 194px;
+    width: 383px;
+    object-fit: cover;
+}
+.title-supermercado-y-productos{
+    color: black;
+    margin: 30px 365px;
+    font-size:18px;
+    color: #4D4B4D;
+}
+.title-supermercado-y-productos b{
+    font-size:20px;
+    color: #3D3C3E;
+    padding-right: 10px;
+}
+
